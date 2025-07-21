@@ -8,7 +8,7 @@ DATA_DIR="/var/lib/$APP_NAME"
 NODE_DATA_DIR="/var/lib/$NODE_NAME"
 COMPOSE_FILE="$CONFIG_DIR/docker-compose.yml"
 
-FETCH_REPO="marzneshin/marzneshin"
+FETCH_REPO="sina0101/marzneshin"
 SCRIPT_URL="https://github.com/$FETCH_REPO/raw/master/script.sh"
 
 colorized_echo() {
