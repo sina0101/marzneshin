@@ -4,13 +4,13 @@ import {
     CardContent,
     CardDescription,
     Button,
-} from "@marzneshin/common/components"
+} from "@sina0101/common/components"
 import { type FC } from "react";
 import {
     GithubIcon,
     StarIcon,
 } from "lucide-react";
-import { projectInfo } from "@marzneshin/common/utils";
+import { projectInfo } from "@sina0101/common/utils";
 
 interface GithubRepoProps {
     variant?: "full" | "mini"
