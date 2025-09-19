@@ -34,7 +34,7 @@ config_mimetype = defaultdict(
     },
 )
 
-
+'''
 def get_subscription_user_info(user: UserResponse) -> dict:
     return {
         "upload": 0,
@@ -46,6 +46,26 @@ def get_subscription_user_info(user: UserResponse) -> dict:
             else 0
         ),
     }
+'''
+
+
+
+
+def get_subscription_user_info(user: UserResponse) -> dict:
+    return {
+        "upload": 0,
+        "download": 0,
+        "total": 0,
+        "expire": (
+            int(user.expire_date.timestamp())
+            if user.expire_strategy == "fixed_date"
+            else 0
+        ),
+    }
+
+
+
+
 
 
 @router.get("/{username}/{key}")
